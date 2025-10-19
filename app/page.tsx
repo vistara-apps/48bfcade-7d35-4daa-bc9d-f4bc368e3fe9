@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Package, Store, BookOpen, Plus } from 'lucide-react';
 import Link from 'next/link';
+import { ProductCard } from './components/ProductCard';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState<'products' | 'storefront' | 'story'>('products');
@@ -84,6 +85,28 @@ export default function Home() {
 }
 
 function ProductsTab() {
+  // Sample products with payment enabled
+  const products = [
+    {
+      id: 1,
+      name: 'Minimalist Cement Planter',
+      description: 'Handcrafted concrete planter with drainage',
+      price: 45.00,
+    },
+    {
+      id: 2,
+      name: 'Geometric Cement Sculpture',
+      description: 'Modern abstract cement art piece',
+      price: 89.00,
+    },
+    {
+      id: 3,
+      name: 'Industrial Cement Coasters',
+      description: 'Set of 4 polished cement coasters',
+      price: 28.00,
+    },
+  ];
+
   return (
     <div className="space-y-6">
       <div className="flex items-center justify-between">
@@ -176,22 +199,10 @@ function ProductsTab() {
         </form>
       </div>
 
-      {/* Sample Products */}
+      {/* Products with Payment Integration */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {[1, 2, 3].map((i) => (
-          <div key={i} className="bg-muted/30 rounded-2xl overflow-hidden border border-accent/10 hover:border-accent/30 transition-colors">
-            <div className="aspect-square bg-muted/50 flex items-center justify-center">
-              <Package className="w-16 h-16 text-accent/40" />
-            </div>
-            <div className="p-4">
-              <h3 className="font-semibold mb-1">Sample Product {i}</h3>
-              <p className="text-sm text-fg/60 mb-3">Beautiful cement piece</p>
-              <div className="flex items-center justify-between">
-                <span className="text-lg font-bold text-accent">$45.00</span>
-                <span className="text-xs bg-accent/20 text-accent px-2 py-1 rounded-lg">In Stock</span>
-              </div>
-            </div>
-          </div>
+        {products.map((product) => (
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </div>
