@@ -1,0 +1,46 @@
+export const PRODUCT_CATEGORIES = [
+  { value: 'planters', label: 'Planters & Pots' },
+  { value: 'sculptures', label: 'Sculptures' },
+  { value: 'tiles', label: 'Decorative Tiles' },
+  { value: 'furniture', label: 'Furniture' },
+  { value: 'other', label: 'Other' },
+] as const;
+
+export const SAMPLE_PRODUCTS = [
+  {
+    id: '1',
+    name: 'Minimalist Concrete Planter',
+    description: 'Hand-crafted geometric planter perfect for succulents',
+    price: 45,
+    imageUrl: '/images/planter-1.jpg',
+    category: 'planters' as const,
+    dimensions: '6" x 6" x 6"',
+    weight: '3 lbs',
+    inStock: true,
+    createdAt: new Date(),
+  },
+  {
+    id: '2',
+    name: 'Abstract Wall Sculpture',
+    description: 'Modern cement art piece with textured finish',
+    price: 120,
+    imageUrl: '/images/sculpture-1.jpg',
+    category: 'sculptures' as const,
+    dimensions: '12" x 18" x 2"',
+    weight: '8 lbs',
+    inStock: true,
+    createdAt: new Date(),
+  },
+  {
+    id: '3',
+    name: 'Hexagonal Tile Set',
+    description: 'Set of 6 decorative cement tiles with geometric patterns',
+    price: 85,
+    imageUrl: '/images/tiles-1.jpg',
+    category: 'tiles' as const,
+    dimensions: '8" x 8" each',
+    weight: '12 lbs total',
+    inStock: true,
+    createdAt: new Date(),
+  },
+];
