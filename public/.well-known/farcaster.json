@@ -1,0 +1,36 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "Cement Canvas",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app",
+    "imageUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/image.png",
+    "splashImageUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "webhookUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/api/webhook",
+    "subtitle": "Built with Zara",
+    "description": "Cement Canvas is a Base Mini App built with Zara.",
+    "screenshotUrls": [
+      "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/screenshot1.png",
+      "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/screenshot2.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "heroImageUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/hero.png",
+    "tagline": "Cement Canvas",
+    "buttonTitle": "Open mini app",
+    "ogTitle": "Cement Canvas",
+    "ogDescription": "Cement Canvas is a Base Mini App built with Zara.",
+    "ogImageUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/og-image.png",
+    "castShareUrl": "https://warpcast.com/~/compose?text=Check+out+Cement%20Canvas+at+https%3A%2F%2F48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app"
+  }
+}
