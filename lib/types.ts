@@ -4,7 +4,7 @@ export interface Product {
   description: string;
   price: number;
   imageUrl: string;
-  category: 'planters' | 'sculptures' | 'tiles' | 'furniture' | 'other';
+  category: 'planter' | 'sculpture' | 'tile' | 'furniture' | 'other';
   dimensions?: string;
   weight?: string;
   inStock: boolean;
@@ -27,10 +27,9 @@ export interface ArtisanProfile {
   };
 }
 
-export interface BrandStory {
-  headline: string;
-  story: string;
-  mission: string;
-  process: string[];
-  values: string[];
+export interface StoryPrompt {
+  id: string;
+  question: string;
+  category: 'origin' | 'process' | 'inspiration' | 'values';
+  placeholder: string;
 }

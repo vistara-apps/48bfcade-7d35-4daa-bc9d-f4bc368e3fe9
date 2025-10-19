@@ -1,46 +1,48 @@
-export const PRODUCT_CATEGORIES = [
-  { value: 'planters', label: 'Planters & Pots' },
-  { value: 'sculptures', label: 'Sculptures' },
-  { value: 'tiles', label: 'Decorative Tiles' },
-  { value: 'furniture', label: 'Furniture' },
-  { value: 'other', label: 'Other' },
-] as const;
+import { StoryPrompt } from './types';
 
-export const SAMPLE_PRODUCTS = [
+export const STORY_PROMPTS: StoryPrompt[] = [
   {
     id: '1',
-    name: 'Minimalist Concrete Planter',
-    description: 'Hand-crafted geometric planter perfect for succulents',
-    price: 45,
-    imageUrl: '/images/planter-1.jpg',
-    category: 'planters' as const,
-    dimensions: '6" x 6" x 6"',
-    weight: '3 lbs',
-    inStock: true,
-    createdAt: new Date(),
+    question: 'What inspired you to start working with cement?',
+    category: 'origin',
+    placeholder: 'Share your journey into cement artistry...'
   },
   {
     id: '2',
-    name: 'Abstract Wall Sculpture',
-    description: 'Modern cement art piece with textured finish',
-    price: 120,
-    imageUrl: '/images/sculpture-1.jpg',
-    category: 'sculptures' as const,
-    dimensions: '12" x 18" x 2"',
-    weight: '8 lbs',
-    inStock: true,
-    createdAt: new Date(),
+    question: 'Describe your creative process from concept to finished piece',
+    category: 'process',
+    placeholder: 'Walk us through how you bring ideas to life...'
   },
   {
     id: '3',
-    name: 'Hexagonal Tile Set',
-    description: 'Set of 6 decorative cement tiles with geometric patterns',
-    price: 85,
-    imageUrl: '/images/tiles-1.jpg',
-    category: 'tiles' as const,
-    dimensions: '8" x 8" each',
-    weight: '12 lbs total',
-    inStock: true,
-    createdAt: new Date(),
+    question: 'What makes your cement pieces unique?',
+    category: 'inspiration',
+    placeholder: 'Tell us what sets your work apart...'
   },
+  {
+    id: '4',
+    question: 'What values guide your craft?',
+    category: 'values',
+    placeholder: 'Share the principles behind your artistry...'
+  },
+  {
+    id: '5',
+    question: 'Where do you find inspiration for new designs?',
+    category: 'inspiration',
+    placeholder: 'Describe your sources of creative inspiration...'
+  },
+  {
+    id: '6',
+    question: 'What sustainability practices do you follow?',
+    category: 'values',
+    placeholder: 'Share how you approach eco-friendly crafting...'
+  }
+];
+
+export const PRODUCT_CATEGORIES = [
+  { value: 'planter', label: 'Planters & Pots' },
+  { value: 'sculpture', label: 'Sculptures' },
+  { value: 'tile', label: 'Tiles & Panels' },
+  { value: 'furniture', label: 'Furniture' },
+  { value: 'other', label: 'Other' }
 ];

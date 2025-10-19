@@ -23,10 +23,10 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
   }, []);
 
   useEffect(() => {
-    if (theme !== 'default') {
-      document.documentElement.setAttribute('data-theme', theme);
-    } else {
+    if (theme === 'default') {
       document.documentElement.removeAttribute('data-theme');
+    } else {
+      document.documentElement.setAttribute('data-theme', theme);
     }
   }, [theme]);
 
