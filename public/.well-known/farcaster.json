@@ -8,11 +8,11 @@
     "version": "1",
     "name": "Cement Canvas",
     "iconUrl": "https://0co.to/images/zara-2.png",
-    "homeUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app",
+    "homeUrl": "https://app-368e3fe9-x6ze.vercel.app",
     "imageUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/image.png",
     "splashImageUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/splash.png",
     "splashBackgroundColor": "#000000",
-    "webhookUrl": "https://48bfcade-7d35-4daa-bc9d-f4bc368e3fe9.vercel.app/api/webhook",
+    "webhookUrl": "https://app-368e3fe9-x6ze.vercel.app/api/webhook",
     "subtitle": "Built with Zara",
     "description": "Cement Canvas is a Base Mini App built with Zara.",
     "screenshotUrls": [
